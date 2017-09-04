@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 
 class CardPost extends Component {
 
-  passToPost=()=>{
-    this.props.passTo(this.props);
+  passToPost =()=> {
+    this.props.passTo(this.props.info);
   }
+  
   render() {
     let tags=[];
     for (var i = 0; i < this.props.info.tags.length; i++) {

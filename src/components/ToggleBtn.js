@@ -5,24 +5,34 @@ class ToggleBtn extends Component {
     super(props);
     this.state={
       img:'',
-      text:'Novo'
+      text:'Post',
+      hash:'#post'
+    }
+  }
+  componentWillReceiveProps(np){
+    // Este metodo funciona porque só vão haver 2 estados de exibição:
+    // - Post e Main
+    if(np!==this.props.janela){
+      this.setState({hash:this.props.janela});
+      this.changeText();
     }
   }
 
-  changeUrl=()=>{
-    if(window.location.hash==="#main"){
-      window.location.hash='#post';
-      this.setState({text:'Voltar'})
-    }else{
-      window.location.hash='#main';
-      this.setState({text:'Novo'})
-          }
+  changeText =()=> {
+    if (this.state.hash!=="#main") {
+      this.setState({text:'Voltar'});
+    } else {
+      this.setState({text:'Post'});
+    }
   }
+
   render() {
-        return (
-      <button className='toggleBtn' onClick={this.changeUrl}>
-        {this.state.text}
-      </button>
+    return (
+      <a href={this.state.hash}>
+        <button className='toggleBtn'>
+          {this.state.text}
+        </button>
+      </a>
     );
   }
 }

@@ -3,45 +3,17 @@
   "assunto": "bignews" ,
   "autor":"Ramon Moraes" ,
   "tags":["wofe","lita"] ,
-  "data":"25-05-2003" ,
-  "text" :"was born the wofe"
+  "data":"1964-05-06" ,
+  "text" :["was born the wofe"],
+  "ativo":true
 },
 {
   "titulo": "mangue",
   "assunto":"sefu" ,
   "autor": "joao",
   "tags": ["do pé", "de feijão", "wow!"],
-  "data": "23-04-2277",
-  "text" : ["Guess what, guess who","PikachU!"]
-},{
-  "titulo":"Titulo 1" ,
-  "assunto": "bignews" ,
-  "autor":"Ramon Moraes" ,
-  "tags":["wofe","lita"] ,
-  "data":"25-05-2003" ,
-  "text" :"was born the wofe"
-},
-{
-  "titulo": "mangue",
-  "assunto":"sefu" ,
-  "autor": "joao",
-  "tags": ["do pé", "de feijão", "wow!"],
-  "data": "23-04-2277",
-  "text" : ["Guess what, guess who","PikachU!"]
-},{
-  "titulo":"Titulo 1" ,
-  "assunto": "bignews" ,
-  "autor":"Ramon Moraes" ,
-  "tags":["wofe","lita"] ,
-  "data":"25-05-2003" ,
-  "text" :"was born the wofe"
-},
-{
-  "titulo": "mangue",
-  "assunto":"sefu" ,
-  "autor": "joao",
-  "tags": ["do pé", "de feijão", "wow!"],
-  "data": "23-04-2277",
-  "text" : ["Guess what, guess who","PikachU!"]
+  "data": "1994-05-17",
+  "text" : ["Guess what, guess who","PikachU!"],
+  "ativo":true
 }
 ]
