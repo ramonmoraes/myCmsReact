@@ -4,10 +4,10 @@ Projeto desenvolvido para ser um CMS simples e pratico.
 
 ### Pre-requisitos
 
-Criado apenas com o 'bundle' do react-create-app
+Criado apenas com o 'bundle' do create-react-app
 
 ```
-npm install react-create-app
+npm install create-react-app
 ```
 
 ### Data
