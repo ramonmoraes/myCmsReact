@@ -34,6 +34,7 @@ class App extends Component {
         </nav>
           <Main janela={this.state.url}/>
           <ToggleBtn janela={this.state.url}/>
+
         </div>
       </div>
     );

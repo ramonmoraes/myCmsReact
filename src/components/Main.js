@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import CardPost from './CardPost';
 import Post from './Post'
-
 class Main extends Component {
 
   constructor(props) {
@@ -15,6 +14,7 @@ class Main extends Component {
   }
 
   componentWillReceiveProps(np) {
+    // Defini o que será apresentado: CardStream ou Post
     this.setState({janela:np.janela});
   }
 
@@ -48,12 +48,14 @@ class Main extends Component {
   clearInfoToPass =()=> {
     this.setState({infoToPass:''});
   }
+
   passToMain =(info)=> {
     this.setState({infoToPass:info});
     window.location.hash='post';
     }
+
   renderCardStream =()=> {
-    if(this.state.loaded){
+    if(this.state.loaded===true){
       return (
         <div className="">
           {this.state.cards}
@@ -61,7 +63,7 @@ class Main extends Component {
       );
     }else{
       return (
-        <div className='center'>
+        <div className='center flex column'>
           <h2> Carregando </h2>
           <img src='/images/loading.gif' alt='loading' />
         </div>

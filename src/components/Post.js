@@ -21,6 +21,24 @@ class Post extends Component {
     }
   }
 
+  componentWillMount() {
+    let buglessState = {
+      public:'',
+      coded:[]
+    }
+    if(!this.props.info.text){
+      this.setState({
+        text:buglessState
+      })
+    }
+
+    if(!this.props.info.tags){
+      this.setState({
+        tags:buglessState
+      })
+    }
+  }
+
   formatTags =()=> {
     let tags = "";
 
@@ -138,12 +156,12 @@ class Post extends Component {
           <label htmlFor='ativo'>Escondida</label>
           <input type='radio' name='ativo' onChange={this.handleChanges} value={false}/>
         </div>
-        <input type='text' placeholder='titulo' name='titulo' onChange={this.handleChanges} value={this.state.titulo} />
-        <input type='text' placeholder='assunto' name='assunto' onChange={this.handleChanges} value={this.state.assunto}  />
-        <input type='text' placeholder='autor' name='autor' onChange={this.handleChanges} value={this.state.autor}  />
-        <input type='text' placeholder='tags' name='tags' onChange={this.handleTagChanges} value={this.state.tags.public} />
-        <input type='date' name='date' onChange={this.handleChanges} value={this.state.data}  />
-        <textarea placeholder='' autoFocus name='text.public' onChange={this.handleTextChanges} value={this.state.text.public}  ></textarea>
+        <input type='text' placeholder='titulo' name='titulo' onChange={this.handleChanges} value={this.state.titulo}/>
+        <input type='text' placeholder='assunto' name='assunto' onChange={this.handleChanges} value={this.state.assunto} />
+        <input type='text' placeholder='autor' name='autor' onChange={this.handleChanges} value={this.state.autor} />
+        <input type='text' placeholder='tags' name='tags' onChange={this.handleTagChanges} value={this.state.tags.public}/>
+        <input type='date' name='date' onChange={this.handleChanges} value={this.state.data} />
+        <textarea placeholder='' autoFocus name='text.public' onChange={this.handleTextChanges} value={this.state.text.public} ></textarea>
         <button onClick={this.logFormated}> Postar </button>
       </div>
     );

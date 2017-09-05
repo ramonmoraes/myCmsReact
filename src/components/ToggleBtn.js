@@ -1,39 +1,35 @@
 import React, { Component } from 'react';
 
 class ToggleBtn extends Component {
+
   constructor(props){
     super(props);
     this.state={
-      img:'',
-      text:'Post',
+      text:'Novo',
       hash:'#post'
     }
   }
-  componentWillReceiveProps(np){
-    // Este metodo funciona porque só vão haver 2 estados de exibição:
-    // - Post e Main
-    if(np!==this.props.janela){
-      this.setState({hash:this.props.janela});
-      this.changeText();
-    }
+
+  toggleJanela =()=> {
+    window.location.hash=this.state.hash;
   }
 
-  changeText =()=> {
-    if (this.state.hash!=="#main") {
-      this.setState({text:'Voltar'});
-    } else {
-      this.setState({text:'Post'});
+  componentWillReceiveProps(np) {
+    if(this.props.janela==="#main"){
+      this.setState({text:"Voltar"});
+    }else{
+      this.setState({text:"Novo"});
     }
+    this.setState({hash:this.props.janela});
   }
+
 
   render() {
     return (
-      <a href={this.state.hash}>
-        <button className='toggleBtn'>
+        <button className='toggleBtn' onClick={this.toggleJanela}>
           {this.state.text}
         </button>
-      </a>
-    );
+        );
   }
 }
 

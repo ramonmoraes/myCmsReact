@@ -32,7 +32,8 @@ post = {
 
 ### Testando
   Com motivos de teste, o projeto esta utilizando um arquivo json statico.
-  Para utilizar em suas APIs, trocar a Url no metodo componentDidMount em './src/components/Main.js'
+
+  Para utilizar em suas APIs, *trocar a Url* no metodo componentDidMount em './src/components/Main.js'
 
 ```
 componentDidMount() {

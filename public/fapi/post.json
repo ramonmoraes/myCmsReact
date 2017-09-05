@@ -3,7 +3,7 @@
   "assunto": "bignews" ,
   "autor":"Ramon Moraes" ,
   "tags":["wofe","lita"] ,
-  "data":"1964-05-06" ,
+  "data":"1954-01-26" ,
   "text" :["was born the wofe"],
   "ativo":true
 },
@@ -11,8 +11,8 @@
   "titulo": "mangue",
   "assunto":"sefu" ,
   "autor": "joao",
-  "tags": ["do pé", "de feijão", "wow!"],
-  "data": "1994-05-17",
+  "tags": ["dopé", "defeijão", "wow!"],
+  "data": "1834-06-27",
   "text" : ["Guess what, guess who","PikachU!"],
   "ativo":true
 }
