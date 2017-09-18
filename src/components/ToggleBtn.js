@@ -6,7 +6,8 @@ class ToggleBtn extends Component {
     super(props);
     this.state={
       text:'Novo',
-      hash:'#post'
+      hash:'#post',
+      first:true
     }
   }
 
@@ -15,12 +16,18 @@ class ToggleBtn extends Component {
   }
 
   componentWillReceiveProps(np) {
-    if(this.props.janela==="#main"){
-      this.setState({text:"Voltar"});
+    if(!this.state.first){
+
+      if(this.props.janela==="#main"){
+        this.setState({text:"Voltar"});
+      }else{
+        this.setState({text:"Novo"});
+      }
+      this.setState({hash:this.props.janela});
     }else{
-      this.setState({text:"Novo"});
+      this.setState({fist:false})
     }
-    this.setState({hash:this.props.janela});
+
   }
 
 

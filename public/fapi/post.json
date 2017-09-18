@@ -2,18 +2,18 @@
   "titulo":"Titulo 1" ,
   "assunto": "bignews" ,
   "autor":"Ramon Moraes" ,
-  "tags":["wofe","lita"] ,
+  "tags":["Ramon","post"] ,
   "data":"1954-01-26" ,
-  "text" :["was born the wofe"],
+  "text" :["generic text no <p>"],
   "ativo":true
 },
 {
-  "titulo": "mangue",
-  "assunto":"sefu" ,
-  "autor": "joao",
-  "tags": ["dopé", "defeijão", "wow!"],
+  "titulo": "Titru",
+  "assunto":"idktho" ,
+  "autor": "Calango Louco",
+  "tags": ["tag", "manytaggs", "wow!Doggo"],
   "data": "1834-06-27",
-  "text" : ["Guess what, guess who","PikachU!"],
+  "text" : ["Guess what, guess who","2 <p>! uhul"],
   "ativo":true
 }
 ]
