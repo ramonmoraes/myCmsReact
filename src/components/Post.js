@@ -151,10 +151,10 @@ class Post extends Component {
       <div className='cmsForm'>
         <p> Definir visibilidade como: </p>
         <div className='cmsLabel'>
-          <label htmlFor='ativo'>Visivel</label>
-          <input type='radio' name='ativo' onChange={this.handleChanges} checked value={true}/>
-          <label htmlFor='ativo'>Escondida</label>
-          <input type='radio' name='ativo' onChange={this.handleChanges} value={false}/>
+          <label htmlFor='visivel'>Visivel</label>
+          <input type='radio' name='ativo' id='visivel' onChange={this.handleChanges} checked value={true}/>
+          <label htmlFor='escondida'>Escondida</label>
+          <input type='radio' name='ativo' id='escondida' onChange={this.handleChanges} value={false}/>
         </div>
         <input type='text' placeholder='titulo' name='titulo' onChange={this.handleChanges} value={this.state.titulo}/>
         <input type='text' placeholder='assunto' name='assunto' onChange={this.handleChanges} value={this.state.assunto} />
